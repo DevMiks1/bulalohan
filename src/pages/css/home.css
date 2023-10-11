@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;500&display=swap');
+
+/* hero section */
+#hero-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    animation: heroAnimation 12s infinite linear; /* Use a duration and iteration count that suits your needs */
+  }
+
+  #hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.6);
+  opacity: 1;
+}
+#hero-section h2{
+    color: white;
+    z-index: 5;
+}
+#hero-section .sub-heading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+#hero-section button{
+    color: white;
+    z-index: 5;
+}
+
+  @keyframes heroAnimation {
+    0%, 100% {
+        background-image: url("../../assets/home-img/hero8-bulalo.png");
+    }
+    25% {
+        background-image: url("../../assets/home-img/hero5-lomi.png");
+    }
+    50% {
+        background-image: url("../../assets/home-img/hero7-no-logo-and-price.png");
+    }
+    75% {
+        background-image: url("../../assets/home-img/hero1-no-logo.png");
+    }
+  }
+
+
+.list-style{
+    list-style-type: circle;
+} 
+/* events */
+#events{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets//events-img/event-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#events .title{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
