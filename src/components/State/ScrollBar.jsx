@@ -28,7 +28,7 @@ const Scrollbar = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`text-white bg-primary px-1 z-40 fixed bottom-14 right-7 transition-opacity duration-300 ease-in-out text-[30px]  ${
+      className={`text-white bg-primary px-1 z-40 fixed bottom-14 right-7 transition-opacity duration-300 ease-in-out text-[30px] 2xl:px-4 2xl:py-2 2xl:text-[35px] 2xl:right-12 ${
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
     >
